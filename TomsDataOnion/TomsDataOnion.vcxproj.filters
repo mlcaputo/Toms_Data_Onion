@@ -18,5 +18,40 @@
     <ClCompile Include="TomsDataOnion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ascii85Decoder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bitOperations.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileReader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parityBitOperations.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XORDecoder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ascii85Decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bitOperations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parityBitOperations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XORDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Payload.txt" />
   </ItemGroup>
 </Project>

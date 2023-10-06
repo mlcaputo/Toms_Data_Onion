@@ -139,7 +139,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ascii85Decoder.cc" />
+    <ClCompile Include="bitOperations.cc" />
+    <ClCompile Include="FileReader.cc" />
+    <ClCompile Include="parityBitOperations.cc" />
     <ClCompile Include="TomsDataOnion.cpp" />
+    <ClCompile Include="XORDecoder.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ascii85Decoder.h" />
+    <ClInclude Include="bitOperations.h" />
+    <ClInclude Include="FileReader.h" />
+    <ClInclude Include="parityBitOperations.h" />
+    <ClInclude Include="XORDecoder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Payload.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
