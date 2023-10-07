@@ -33,6 +33,9 @@
     <ClCompile Include="XORDecoder.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NetworkDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ascii85Decoder.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="XORDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkDecoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

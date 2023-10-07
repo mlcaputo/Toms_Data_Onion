@@ -12,6 +12,8 @@
 #include "bitOperations.h"
 #include "parityBitOperations.h"
 #include "XORDecoder.h"
+#include "NetworkDecoder.h"
+
 
 using namespace std;
 
@@ -75,17 +77,18 @@ int main() {
 #pragma region Layer 4
     string layer4Payload = readFile("Layer4PayLoad.txt");
     string layer4PayloadOutput = ascii85Decoder(layer4Payload);
-    //layer4PayloadOutput = networkTraffic();
+    layer4PayloadOutput = NetworkDecoder(layer4PayloadOutput);
 
-    //startOfNewPayload = layer4PayloadOutput.find("<~");
-    //string layer4Info = layer4PayloadOutput.substr(0, startOfNewPayload);
-    //makeTextFile("Layer5Payload.txt", layer4PayloadOutput.substr(startOfNewPayload));
+    startOfNewPayload = layer4PayloadOutput.find("<~");
+    string layer5Info = layer4PayloadOutput.substr(0, startOfNewPayload);
+    makeTextFile("Layer5Payload.txt", layer4PayloadOutput.substr(startOfNewPayload));
 #pragma endregion
 
-    cout << layer1Info << "[ Saved in Text File ]" << "\n\n";
+    /*cout << layer1Info << "[ Saved in Text File ]" << "\n\n";
     cout << layer2Info << "[ Saved in Text File ]" << "\n\n";
-    cout << layer3Info << "[ Saved in Text File ]" << "\n\n";
+    cout << layer3Info << "[ Saved in Text File ]" << "\n\n";*/
     cout << layer4Info << "[ Saved in Text File ]" << "\n\n";
+    cout << layer5Info << "[ Saved in Text File ]" << "\n\n";
 
     return 0;
 }

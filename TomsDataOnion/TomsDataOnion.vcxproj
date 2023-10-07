@@ -142,6 +142,7 @@
     <ClCompile Include="ascii85Decoder.cc" />
     <ClCompile Include="bitOperations.cc" />
     <ClCompile Include="FileReader.cc" />
+    <ClCompile Include="NetworkDecoder.cpp" />
     <ClCompile Include="parityBitOperations.cc" />
     <ClCompile Include="TomsDataOnion.cpp" />
     <ClCompile Include="XORDecoder.cc" />
@@ -150,6 +151,7 @@
     <ClInclude Include="ascii85Decoder.h" />
     <ClInclude Include="bitOperations.h" />
     <ClInclude Include="FileReader.h" />
+    <ClInclude Include="NetworkDecoder.h" />
     <ClInclude Include="parityBitOperations.h" />
     <ClInclude Include="XORDecoder.h" />
   </ItemGroup>
