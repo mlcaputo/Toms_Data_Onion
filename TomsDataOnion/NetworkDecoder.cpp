@@ -106,7 +106,7 @@ string NetworkDecoder(string input) {
 			UDPCheckSum += carryOver;
 			uint16_t UDPTrunkCheckSum = UDPCheckSum;
 
-			if (UDPTrunkCheckSum == 0xffff) {
+			if (UDPTrunkCheckSum == 0xffff && UDPHeader[1] == 42069) {
 				for(auto it = UDPData.begin(); it != UDPData.end(); ++it) {
 					uint16_t temp = *it;
 					result += (unsigned char) (temp >> 8);
@@ -114,16 +114,19 @@ string NetworkDecoder(string input) {
 					result += (unsigned char) (temp >> 8);
 				}
 			}
+			else {
+				badPacket++;
+				//cout << badPacket << "\n";
+			}
 			
-
 		}
 		else {
 			posCount += IPv4totalLength;
 			badPacket++;
+			//cout << badPacket << "\n";
 		}
 
-	}
-	//cout << badPacket << "\n";
+	}	
 
 	return result;
 }
