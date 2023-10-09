@@ -291,7 +291,7 @@ impossible to detect. Trust me.
 The packets appear in the correct order. No reordering is
 necessary.
 
-## Layer 5/6: Advanced Encryption Standard
+## Layer 5/6: Advanced Encryption Standard [IN PROGRESS...]
 The Advanced Encryption Standard (AES) is an
 industry-standard encryption algorithm. In 2001, after a
 five year evaluation of 15 different encryption algorithms,
