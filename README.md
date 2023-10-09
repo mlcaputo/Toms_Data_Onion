@@ -84,7 +84,7 @@ apply the following operations to each byte:
 
 For example:
 
-                        |      Binary      Decimal  Hex
+                            Binary         Decimal  Hex
   ----------------------+-------------------------------
   Starting value        | 1 0 1 1 0 1 0 0    180     B4
                         |   v   v   v   v
